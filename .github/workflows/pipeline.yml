@@ -17,6 +17,9 @@ jobs:
 
       - run: npm install
 
+      - name: Dar permisos a ESLint
+        run: chmod +x node_modules/.bin/eslint
+
       - run: npm run lint
 
       - run: npm test
