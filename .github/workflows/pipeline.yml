@@ -2,27 +2,21 @@ name: Pipeline DevOps
 
 on:
   push:
-    branches: [ main ]  # cambia a master si no renombraste
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout del código
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
 
-      - name: Instalar dependencias
-        run: npm install
+      - run: npm install
 
-      - name: Ejecutar ESLint
-        run: npx eslint .
+      - run: npm run lint
 
-      - name: Ejecutar pruebas con Jest
-        run: npm test
+      - run: npm test
