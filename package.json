@@ -6,6 +6,7 @@
   "devDependencies": {
     "@eslint/js": "^8.57.1",
     "eslint": "^8.57.1",
+    "eslint-plugin-jest": "^29.15.1",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.4.0",
     "jest": "^30.3.0"
