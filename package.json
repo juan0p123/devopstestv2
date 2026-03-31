@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "jest",
-    "lint": "eslint . --ext .js,.vue"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "eslint": "^8.57.1",
