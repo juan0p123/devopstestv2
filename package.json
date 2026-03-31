@@ -1,11 +1,9 @@
 {
-  "type": "module",
   "scripts": {
     "test": "jest",
     "lint": "eslint . --ext .js,.vue"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "eslint": "^8.57.1",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.4.0",
